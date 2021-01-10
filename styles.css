@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    padding: 20% 10%;
+    
+}
+
+footer {
+    position: absolute;
+    transform: translate(0,25rem);
+}
+
+h2 {
+    
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.attribution { font-size: 11px; 
+    text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+.main-ctn {
+    width: 100%;
+    flex-direction: column;
+    background-color: tomato;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.box {
+    padding: 25px;
+}
+
+.desc {
+    background-color: white;
+    line-height: 2;
+}
+
+.desc h2 {
+    color: hsl(179, 62%, 43%);
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.desc h3 {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    line-height: 1.25;   
+}
+
+.desc p {
+    color: hsl(218, 22%, 67%);
+    font-size: 12px;
+}
+
+.price {
+    background-color: hsl(179, 62%, 43%);
+    
+}
+
+.price h3 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    vertical-align: bottom;
+    padding-bottom: 5px;
+}
+
+.price h3 span {
+    color: hsl(204, 43%, 93%);
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+.price p {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.price a {
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.features {
+    background-color: hsl(179, 50%, 55%);
+    line-height: 1.5;
+    color: white;
+}
+
+.features li {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+@media (min-width: 600px) {
+    body {
+        padding: 0 10%;
+        overflow: hidden;
+    }
+
+    footer {
+        transform: translate(0,20rem);
+    }
+
+    .lower-ctn {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1.5;
+    }
+
+    .desc h2 {
+        font-size: 22px;
+    }
+
+    .desc h3 {
+        font-size: 20px;
+    }
+    .desc p{
+        font-size: 18px;
+    }
+
+    .price, .features {
+        width: 45%;
+    }
+
+    .price h2, .features h2 {
+        font-size: 18px;
+    }
+
+    .price h3 {
+        font-size: 36px;
+    }
+
+    .price h3 span, .price p {
+        font-size: 16px;
+    }
+
+    .features li {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        padding: 0 29%;
+        overflow: hidden;
+    }
